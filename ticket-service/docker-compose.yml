@@ -9,8 +9,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: ticketflow_db
-      MYSQL_USER: ticketflow_user
-      MYSQL_PASSWORD: ticketflow_password
+      MYSQL_USER: ticketflow_root
+      MYSQL_PASSWORD: Zeufack2005
     volumes:
       - mysql_data:/var/lib/mysql
 
