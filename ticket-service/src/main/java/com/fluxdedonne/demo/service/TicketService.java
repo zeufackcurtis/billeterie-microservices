@@ -6,7 +6,7 @@ public interface TicketService {
     List<Ticket> getAllTickets();
     Ticket getTicketById(Long id);
     Ticket updateTicket(long id, Ticket ticketDetails);
-    void deleteTicketById(Long id);
+   // void deleteTicketById(Long id);
 
     void deleteTicket(Long id);
 }

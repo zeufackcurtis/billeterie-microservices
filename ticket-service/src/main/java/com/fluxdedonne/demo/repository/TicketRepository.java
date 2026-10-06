@@ -1,7 +1,6 @@
-package Repository;
+package com.fluxdedonne.demo.repository;
 import com.fluxdedonne.demo.model.Ticket;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 public interface TicketRepository extends JpaRepository<Ticket,Long> {
 }
