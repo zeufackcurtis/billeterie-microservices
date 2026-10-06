@@ -1,0 +1,37 @@
+### Créer un nouveau ticket (POST)
+POST http://localhost:8080/api/tickets
+Content-Type: application/json
+
+{
+  "titre": "Concert VIP de TIAKOLA",
+  "description" : "Ticket de Ebouka ",
+  "prix": 300.0,
+  "quantiteDisponible": 80,
+  "dateEvenement": "2026-12-20T20:00:00"
+
+
+}
+
+###
+### Récupérer tous les tickets (GET)
+GET http://localhost:8080/api/tickets
+
+###recuperer les sticker selon leur ID
+GET http://localhost:8080/api/tickets/1
+
+### Modifier le ticket numéro 1 (PUT)
+PUT http://localhost:8080/api/tickets/5
+Content-Type: application/json
+
+{
+  "titre": "Concert VIP de TIAKOLA",
+  "description": "ticket de Ebouka",
+  "prix": 300.0,
+  "quantiteDisponible": 76,
+  "dateEvenement": "2026-12-25T20:00:00"
+}
+
+###
+
+### Supprimer le ticket numéro 1 (DELETE)
+DELETE http://localhost:8080/api/tickets/1

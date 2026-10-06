@@ -79,7 +79,11 @@ public class TicketServiceImpl implements TicketService {
     @Override
     public Ticket updateTicket(long id, Ticket ticketDetails) {
         Ticket ticket = getTicketById(id);
-        // ticket.setXxx(ticketDetails.getXxx()); pour chaque champ
+        ticket.setTitre(ticketDetails.getTitre());
+        ticket.setDescription(ticketDetails.getDescription());
+        ticket.setPrix(ticketDetails.getPrix());
+        ticket.setQuantiteDisponible(ticketDetails.getQuantiteDisponible());
+        ticket.setDateEvenement(ticketDetails.getDateEvenement());
         return ticketRepository.save(ticket);
     }
 
