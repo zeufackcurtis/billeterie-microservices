@@ -4,9 +4,9 @@ Content-Type: application/json
 
 {
   "titre": "Concert VIP de TIAKOLA",
-  "description" : "Ticket de Ebouka ",
+  "description" : "Ticket de zizou ",
   "prix": 300.0,
-  "quantiteDisponible": 80,
+  "quantiteDisponible": 75,
   "dateEvenement": "2026-12-20T20:00:00"
 
 
@@ -34,4 +34,4 @@ Content-Type: application/json
 ###
 
 ### Supprimer le ticket numéro 1 (DELETE)
-DELETE http://localhost:8080/api/tickets/1
+DELETE http://localhost:8080/api/tickets/7
